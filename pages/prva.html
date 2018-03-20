@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <a href="index.html" class="navbar-brand"> <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>Movies</a>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="row">
+        <h2 class="page-header">{{activeMovie.original_title}}</h2>
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-sm-6">
+            <img class="img-responsive" ng-src="bands-master/images{{activeMovie.poster_path}}" alt="">
+          </div>
+          <div class="col-sm-6">
+            <p><b>Release Date: {{activeMovie.release_date}}</b></p>
+            <p><b>Overview:</b></p>
+            <p class="alterFont">{{activeMovie.overview}}</p>
+            <p><b>Average Rating: {{activeMovie.vote_average}}</b></p>
+            <p><b>Budget: {{activeMovie.budget}}$</b></p>
+            <p><b>Revenue: {{activeMovie.revenue}}$</b></p>
+            <p><b>Runtime: {{activeMovie.runtime}} min.</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

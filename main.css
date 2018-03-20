@@ -1,0 +1,17 @@
+#one {
+  height: 35px;
+  overflow : hidden;
+}
+#two {
+  height : 300px;
+}
+#imgTwo{
+  height: 250px;
+  margin: 0 auto;
+}
+#linkId:hover {
+text-decoration: underline;
+}
+.alterFont {
+  font-family: georgia;
+}

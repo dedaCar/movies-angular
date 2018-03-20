@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand"> <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>Movies</a>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-offset-2">
+      <div class="row">
+
+        <div class="col-lg-3" ng-repeat="movie in movies">
+          <a id="linkId"  href="#/prva/{{movie.id}}">
+          <div class="panel panel-default">
+            <div id="one" class="panel-heading">{{movie.original_title}}</div>
+            <div id="two" class="panel-body"><img id="imgTwo" class="poster img-responsive" ng-src="bands-master/images{{movie.poster_path}}" alt="empty"></div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
